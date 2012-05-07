@@ -151,7 +151,7 @@ public class GobandroidDialog extends Dialog {
 	private Button getPositiveButton() {
 		if (positive_btn==null) {
 			positive_btn=new Button(getContext());
-			LinearLayout.LayoutParams lp=new LinearLayout.LayoutParams(LinearLayout.LayoutParams.FILL_PARENT,LinearLayout.LayoutParams.FILL_PARENT,1f);
+			LinearLayout.LayoutParams lp=new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.MATCH_PARENT,1f);
 			positive_btn.setLayoutParams(lp);
 			button_container.addView(positive_btn);
 		}
@@ -172,7 +172,7 @@ public class GobandroidDialog extends Dialog {
 	private Button getNegativeButton() {
 		if (negative_btn==null) {
 			negative_btn=new Button(getContext());
-			LinearLayout.LayoutParams lp=new LinearLayout.LayoutParams(LinearLayout.LayoutParams.FILL_PARENT,LinearLayout.LayoutParams.FILL_PARENT,1f);
+			LinearLayout.LayoutParams lp=new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.MATCH_PARENT,1f);
 			negative_btn.setLayoutParams(lp);
 			button_container.addView(negative_btn);
 		}
